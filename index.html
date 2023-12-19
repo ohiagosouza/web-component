@@ -4,10 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primeiro Web Component</title>
+    <link rel="stylesheet" href="style/style.css" />
     <script src="./src/Components/CardNews.js" defer></script>
     <script src="./index.js"></script>
   </head>
   <body>
-    <card-news></card-news>
+    <div class="container">
+      <card-news
+        author="Hiago Souza"
+        card-url="https://github.com/ohiagosouza"
+        card-title="Darth Vader Contrata Devs"
+        card-content="Darth Vader procura desenvolvedores que sabem trabalhar com componentes."
+        img-url="./assets/vader.jpg"
+      ></card-news>
+
+      <card-news
+        card-url="https://github.com/ohiagosouza"
+        card-title="GTA VI é lançado"
+        card-content="GTA VI é lançado e já fatura U$ 100,000,000,000.00 nos primeiros 5 segundos"
+      ></card-news>
+
+      <card-news
+        card-url="https://github.com/ohiagosouza"
+        card-title="Confira novos Smartphones para 2024"
+        card-content="Lista com os 10 melhores Smarpthones para esse novo ano de 2024"
+      ></card-news>
+
+      <card-news
+        card-url="https://github.com/ohiagosouza"
+        card-title="Novo AirBot"
+        card-content="Empresa Suíça lança novo AirBot, dispositivo promete auxiliar no envio de encomendas por vias aéreas"
+      ></card-news>
+    </div>
   </body>
 </html>
